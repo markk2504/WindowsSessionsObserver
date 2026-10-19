@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SessionObserver.Service</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Description>Windows Service that records Windows session changes and serves them over a named pipe.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SessionObserver.Protocol\SessionObserver.Protocol.csproj" />
+    <ProjectReference Include="..\SessionObserver.Logging\SessionObserver.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="SessionObserver.UnitTests" />
+  </ItemGroup>
+
+</Project>

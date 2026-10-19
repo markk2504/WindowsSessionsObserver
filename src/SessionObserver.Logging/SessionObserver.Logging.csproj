@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>SessionObserver.Logging</RootNamespace>
+    <Description>log4net bootstrap shared by every Windows Sessions Observer executable.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Built-in default, used when no log4net.config sits next to the executable. -->
+    <EmbeddedResource Include="log4net.config" LogicalName="SessionObserver.Logging.log4net.config" />
+    <!-- Also copied next to every executable that references this library, so admins can edit it in place. -->
+    <None Include="log4net.config" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

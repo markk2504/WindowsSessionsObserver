@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>SessionObserver.Protocol</RootNamespace>
+    <Description>Data model, wire messages and framing shared by the Windows Sessions Observer service and its clients.</Description>
+  </PropertyGroup>
+
+</Project>

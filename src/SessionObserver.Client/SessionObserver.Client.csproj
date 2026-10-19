@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>SessionObserver.Client</RootNamespace>
+    <Description>Client for the Windows Sessions Observer service.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SessionObserver.Protocol\SessionObserver.Protocol.csproj" />
+    <ProjectReference Include="..\SessionObserver.Logging\SessionObserver.Logging.csproj" />
+  </ItemGroup>
+
+</Project>
