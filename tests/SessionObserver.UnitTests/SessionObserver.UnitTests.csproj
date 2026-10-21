@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>SessionObserver.UnitTests</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SessionObserver.Protocol\SessionObserver.Protocol.csproj" />
+    <ProjectReference Include="..\..\src\SessionObserver.Logging\SessionObserver.Logging.csproj" />
+    <ProjectReference Include="..\..\src\SessionObserver.Client\SessionObserver.Client.csproj" />
+    <ProjectReference Include="..\..\src\SessionObserver.Service\SessionObserver.Service.csproj" />
+  </ItemGroup>
+
+</Project>

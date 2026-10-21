@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SessionObserver.Client/SessionObserver.Client.csproj" />
+    <Project Path="src/SessionObserver.Logging/SessionObserver.Logging.csproj" />
+    <Project Path="src/SessionObserver.Protocol/SessionObserver.Protocol.csproj" />
+    <Project Path="src/SessionObserver.Service/SessionObserver.Service.csproj" />
+    <Project Path="src/SessionObserver.Test/SessionObserver.Test.csproj" />
+    <Project Path="src/SessionObserver.Viewer/SessionObserver.Viewer.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SessionObserver.UnitTests/SessionObserver.UnitTests.csproj" />
+  </Folder>
+</Solution>

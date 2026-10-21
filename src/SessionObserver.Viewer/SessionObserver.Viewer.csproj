@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>sessionsviewer</AssemblyName>
+    <RootNamespace>SessionObserver.Viewer</RootNamespace>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <!-- The pipe is admin-only, so the viewer always runs elevated. -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Description>WinForms viewer for current Windows sessions and the live session event feed.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SessionObserver.Client\SessionObserver.Client.csproj" />
+    <ProjectReference Include="..\SessionObserver.Logging\SessionObserver.Logging.csproj" />
+  </ItemGroup>
+
+</Project>

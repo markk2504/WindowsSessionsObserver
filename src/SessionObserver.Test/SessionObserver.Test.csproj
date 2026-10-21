@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>sessionobservertest</AssemblyName>
+    <RootNamespace>SessionObserver.Test</RootNamespace>
+    <!-- The pipe is admin-only, so the tool always runs elevated. -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Description>Console debug tool for the Windows Sessions Observer service.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SessionObserver.Client\SessionObserver.Client.csproj" />
+    <ProjectReference Include="..\SessionObserver.Logging\SessionObserver.Logging.csproj" />
+  </ItemGroup>
+
+</Project>
